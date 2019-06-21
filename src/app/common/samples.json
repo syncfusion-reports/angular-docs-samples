@@ -1,0 +1,28 @@
+{
+    "ReportViewer": {
+        "samples": [
+            {
+                "routerPath": "getting-started",
+                "className": "ReportViewerGettingStartedComponent",
+                "sampleName": "Getting Started",
+                "metaData": {
+                    "title": "Report Viewer demo",
+                    "description": "Sales order detail report preview"
+                }
+            }
+        ]
+    },
+    "ReportDesigner": {
+        "samples": [
+            {
+                "routerPath": "getting-started",
+                "className": "ReportDesignerGettingStartedComponent",
+                "sampleName": "Getting Started",
+                "metaData": {
+                    "title": "Report Designer demo",
+                    "description": "Report designer description"
+                }
+            }
+        ]
+    }
+}

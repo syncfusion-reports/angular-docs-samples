@@ -1,0 +1,78 @@
+.ej-doc-header {
+    background-color: #fff;
+    box-shadow: 0 8px 11px -6px rgba(0, 0, 0, 0.12);
+    height: 48px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    justify-content: space-between;
+}
+
+.ej-doc-header .ej-doc-left-side {
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.ej-doc-header .ej-doc-left-side .ej-doc-hamburger-icon {
+    margin: 0 21px 0 25px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.ej-doc-header .ej-doc-left-side .ej-doc-hamburger-icon::before {
+    content: "\e914";
+    color: #3c78ef;
+}
+
+.ej-doc-header .ej-doc-left-side .ej-doc-platform-name {
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 17px;
+    opacity: 1;
+    font-weight: 600;
+}
+
+.ej-doc-header .ej-doc-right-side {
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.ej-doc-header .ej-doc-right-side a {
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0 20px 0px 0;
+    color: #333;
+    opacity: 1;
+}
+
+.ej-doc-header .ej-doc-right-side a:hover {
+    color: #0450c2;
+}
+
+.ej-doc-header .ej-doc-right-side a.ej-doc-button {
+    height: 32px;
+    font-size: 14px;
+    font-weight: 700;
+    opacity: 1;
+    text-decoration: none;
+    padding: 5.5px 13px;
+    cursor: pointer;
+    background-color: #3C78EF;
+    color: #ffffff;
+    border-radius: 2px;
+}
+
+.ej-doc-header .ej-doc-right-side a.ej-doc-button:hover {
+    background: #006CE6;
+}
+
+@media only screen and (max-width: 550px) {
+    .ej-doc-header .ej-doc-right-side {
+      display: none;
+    }
+  }

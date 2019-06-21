@@ -1,0 +1,18 @@
+<div class="ej-doc-sidebar-content">
+  <div class="ej-doc-toc">
+    <div class="ej-doc-list-header" data-toggle="collapse" data-target="#collapseReportViewer" aria-expanded="true"
+      aria-controls="collapseReportViewer">Report Viewer</div>
+    <div id="collapseReportViewer" class="collapse show">
+      <div *ngFor="let sample of reportViewerSample" #toc class="ej-doc-list-item" tabindex="-1"
+        [ngClass]="(('/' + reportViewer + sample.routerPath) === selectedPath) ? tocSelection(toc) : ''"
+        (mousedown)="onSampleClick({sample: sample, prependHash: reportViewer})">{{sample.sampleName}}</div>
+    </div>
+    <div class="ej-doc-list-header" data-toggle="collapse" data-target="#collapseReportDesigner" aria-expanded="true"
+      aria-controls="collapseReportDesigner">Report Designer</div>
+    <div id="collapseReportDesigner" class="collapse show">
+      <div *ngFor="let sample of reportDesignerSample" #toc class="ej-doc-list-item" tabindex="-1"
+        [ngClass]="(('/' + reportDesigner + sample.routerPath) === selectedPath) ? tocSelection(toc) : ''"
+        (mousedown)="onSampleClick({sample: sample, prependHash: reportDesigner})">{{sample.sampleName}}</div>
+    </div>
+  </div>
+</div>

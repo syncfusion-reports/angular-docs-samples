@@ -1,0 +1,32 @@
+.ej-doc-sidebar-content .ej-doc-list-header{
+    height: 50px;
+    color: #0073dd;
+    padding-left: 15px;
+    font-size: 16px;
+    line-height: 50px;
+    font-weight: 500;
+    cursor: pointer;
+    border-bottom: 1px solid #dedede;
+    border-top: 1px solid #dedede;
+}
+
+.ej-doc-sidebar-content .ej-doc-list-item{
+    height: 40px;
+    line-height: 40px;
+    padding-left: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ej-doc-sidebar-content .ej-doc-list-item:hover:not(.ej-doc-toc-selected ) {
+    background: #cde9ff;
+}
+
+.ej-doc-sidebar-content .ej-doc-toc-selected {
+    background: #0073dd;
+    color: #fff;
+}
